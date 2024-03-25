@@ -1,0 +1,22 @@
+{
+    "apps": [
+        {
+            "name": "activity-nest-kr-pre",
+            "max_memory_restart": "300M",
+            "script": "dist/src/main.js",
+            "out_file": "/home/efun/logs/activity-nest-kr-pre/activity-nest-kr-out.log",
+            "error_file": "/home/efun/logs/activity-nest-kr-pre/activity-nest-kr-error.log",
+            "merge_logs": true,
+            "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+            "exec_mode": "fork",
+            "env": {
+                "NODE_ENV": "pre-production",
+                "PORT": "34101"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            },
+            "autorestart": true
+        }
+    ]
+}

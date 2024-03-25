@@ -1,0 +1,16 @@
+{
+    "common": {
+        "commit": "git add . && git-cz",
+        "gitflow": "node ./scripts/gitflow"
+    },
+    "nodeServer": {
+        "prod": "pm2 start ecosystem.json",
+        "pre-prod": "pm2 start ecosystem-pre.json",
+        "prod-restart": "pm2 restart ${PROJECT_NAME}",
+        "prod-delete": "pm2 delete ${PROJECT_NAME}",
+        "pre-restart": "pm2 restart ${PROJECT_NAME}-pre",
+        "prod-stop": "pm2 stop ${PROJECT_NAME}",
+        "pre-stop": "pm2 stop ${PROJECT_NAME}-pre",
+        "pre-delete": "pm2 delete ${PROJECT_NAME}-pre"
+    }
+}
