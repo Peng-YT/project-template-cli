@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Peng-YT/project-template-cli/issues"
   },
-  "homepage": "https://github.com/Peng-YT/project-template-cli#readme"
+  "homepage": "https://github.com/Peng-YT/project-template-cli#readme",
+  "dependencies": {
+    "jenkins": "^1.1.0"
+  }
 }
